@@ -1,0 +1,17 @@
+$TTL 1D
+@	IN SOA	asterix.madmakers.com. adminstrador.madmakers.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+;Servidor DNS autorizado para el Dominio
+@	IN	NS	asterix.madmakers.com.
+	IN	NS	obelix.madmakers.com.
+;Hosts
+
+10.0	IN	PTR	obelix.madmakers.com.
+20.0	IN	PTR	asterix.madmakers.com.
+1.0	IN	PTR	caesar.madmakers.com.
+30.0	IN	PTR	panoramix.madmakers.com.
+
