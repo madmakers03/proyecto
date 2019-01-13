@@ -1,0 +1,17 @@
+//Zona de Busqueda Directa
+zone "madmakers.com" in {
+	type master;
+	file "/var/lib/named/db.madmakers.com";
+	allow-transfer {172.16.0.10;};
+	allow-query {any;};
+	allow-query-on {any;};
+};
+
+//Zona de Busqueda Inversa
+zone "16.172.in-addr.arpa" in {
+	type slave;
+	file "/var/lib/named/slave/db.172.16";
+	masters {172.16.0.10;};
+};
+
+
