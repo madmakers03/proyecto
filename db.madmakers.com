@@ -13,7 +13,7 @@ $TTL 1D
 asterix		IN	A	172.16.0.20
 obelix		IN	A	172.16.0.10
 caesar		IN	A	172.16.0.1
-panoramix		IN	A	172.16.0.30
+panoramix	IN	A	172.16.0.30
 
 
 ;Alias
@@ -21,7 +21,7 @@ ftp		IN	CNAME	asterix.madmakers.com.
 odt		IN	CNAME	obelix
 bridged		IN	CNAME	caesar
 client		IN	CNAME	panoramix
-depinfo		IN	CNAME	obelix
+depinformatica		IN	CNAME	obelix
 depventas		IN	CNAME	asterix
 depformacion		IN	CNAME	asterix
 
