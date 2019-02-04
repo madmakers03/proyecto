@@ -1,0 +1,21 @@
+#
+# DHCP Server Configuration file.
+#   see /usr/share/doc/dhcp*/dhcpd.conf.example
+#   see dhcpd.conf(5) man page
+#
+
+option routers 172.16.0.1;
+option broadcast-address 172.16.255.255;
+option domain-name-servers 172.16.0.10,172.16.0.20;
+
+default-lease-time 6000;
+max-lease-time 12000;
+
+subnet 172.16.0.0 netmask 255.255.0.0 {
+	range 172.16.0.50 172.16.0.99;
+}
+host Windows7 {
+	option host-name "Windows7-madmakers";
+	hardware ethernet 08:00:27:7F:16:F7;
+	fixed-address 172.16.0.30;
+}
